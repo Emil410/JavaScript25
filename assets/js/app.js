@@ -14,6 +14,7 @@ const editData = (person, tr) => {
     nameInput.value = person.s_name;
     ageInput.value = person.s_age;
     genderOption.value = person.s_gender;
+    tr.remove();
     persons = persons.filter(
         (p) =>
         p.s_surname !== person.s_surname ||
