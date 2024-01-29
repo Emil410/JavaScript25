@@ -80,6 +80,7 @@
                 p.s_name !== tdName.innerText ||
                 p.s_age !== tdAge.innerText
             );
+            updateNumbering();
         });
         editButton.addEventListener("click", () => {
             editData(person, tdSurname, tdName, tdAge, tdGender);
